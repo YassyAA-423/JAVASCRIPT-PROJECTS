@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Container for the slideshow*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border: 2px solid plum;
+    object-position: center;
+    background-color: #24101e;
+}
+
+/*Will hide the images by default*/
+.myslides {
+    display: none;
+}
+
+/*images (to resize the images and add a border)*/
+.image-container{
+    height: 450px;
+    width: 700px;
+    margin: 25px;
+    margin-left: 150px;
+    border-radius: 35px;
+}
+
+.image-container img {
+    height: 450px;
+    width: 700px;
+    margin-left: -5px;
+    border: 5px solid plum;
+    border-radius: 30px;
+}
+
+/*The next and previous buttons*/
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: azure;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/*Position the next button on the right*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*Prev and next hover*/
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Text style */
+.text {
+    color: lavender;
+    font-size: 17px;
+    padding: 2px;
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+/*number text style for the (1/7)*/
+.numbertext {
+    color: lavender;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*The dots to show which slide your on*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 20px;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/*Fading animation*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+     to {opacity: 1}
+}

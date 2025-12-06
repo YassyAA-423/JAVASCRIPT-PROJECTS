@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Alarm Section -->
+    <section>
+        <div>
+            <p>How many seconds would you like to set your alarm for?</p>
+            <input id="seconds" value="" />
+            <button onclick="countdown()">Click Here</button>
+            <p id="timer"></p>
+        </div>
+    </section>
+    <br>
+    <!--Slideshow section-->
+    <section>
+        <div class="slideshow-container">
+            <!--The flower images-->
+            <!--Blue flower-->
+            <div class="myslides fade">
+                <div class="numbertext">1/7</div>
+                <div class="image-container">
+                <img src="image/Blue-plumbago.jpg" alt="Blue Plumbago Flowers">
+                </div>
+                <div class="text">Plumbago Flowers</div>
+            </div>
+
+            <!--Green flower-->
+            <div class="myslides fade">
+                <div class="numbertext">2/7</div>
+                <div class="image-container">
+                    <img src="image/Green-Hellebore.jpg" alt="Green Hellebore Flowers">
+                </div>
+                <div class="text">Hellebore Flowers</div>
+            </div>
+
+            <!--Yellow flower-->
+            <div class="myslides fade">
+                <div class="numbertext">3/7</div>
+                <div class="image-container">
+                    <img src="image/Yellow-sunflowers.webp" alt="Yellow Sunflowers">
+                </div>
+                <div class="text">Sunflowers</div>
+            </div>
+
+            <!--Orange flower-->
+            <div class="myslides fade">
+                <div class="numbertext">4/7</div>
+                <div class="image-container">
+                    <img src="image/Orange-dahlias.webp" alt="Orange Dahlias Flowers">
+                </div>
+                <div class="text">Dahlias Flowers</div>
+            </div>
+
+            <!--Red flower-->
+            <div class="myslides fade">
+                <div class="numbertext">5/7</div>
+                <div class="image-container">
+                    <img src="image/Red-Carnation-flowers.jpg" alt="Red Carnation Flowers">
+                </div>
+                <div class="text">Carnation Flowers</div>
+            </div>
+
+            <!--Purple flower-->
+            <div class="myslides fade">
+                <div class="numbertext">6/7</div>
+                <div class="image-container">
+                    <img src="image/Purple-bulbous .avif" alt="Purple Bulblous Flowers">
+                </div>
+                <div class="text">Bulblous Flowers</div>
+            </div>
+
+            <!--Pink flower-->
+            <div class="myslides fade">
+                <div class="numbertext">7/7</div>
+                <div class="image-container">
+                    <img src="image/Pink-flowers-pink-peonies.jpg" alt="Pink Peonies Flowers">
+                </div>
+                <div class="text">Peonies Flowers</div>
+            </div>
+
+            <!--Next and Previous Buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!--Dots/slides-->
+        <div style="text-align: center;">
+            <Span class="dot" onclick="currentSlide(1)"></Span>
+            <Span class="dot" onclick="currentSlide(2)"></Span>
+            <Span class="dot" onclick="currentSlide(3)"></Span>
+            <Span class="dot" onclick="currentSlide(4)"></Span>
+            <Span class="dot" onclick="currentSlide(5)"></Span>
+            <Span class="dot" onclick="currentSlide(6)"></Span>
+            <Span class="dot" onclick="currentSlide(7)"></Span>
+        </div>
+
+    </section>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
