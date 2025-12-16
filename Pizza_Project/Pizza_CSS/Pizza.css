@@ -1,0 +1,214 @@
+/*Story Script(menu), Sonsie One(h3) and LimeLight(h1) comes from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+/*for the h3 font-family: "Sonsie One", system-ui;*/
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+/*for the h1 font-family: "Limelight", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+/*for the menu font-family: "Story Script", sans-serif;*/
+
+/*    font-family: "Story Script", sans-serif;
+    background-color: #8d1919;*/
+
+html {
+    overflow: hidden;
+}
+
+
+#menuBG {
+    width: 400px;
+    height: 470px;
+    object-position: justify;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 600px;
+}
+
+/*The menu items styling*/
+#frmMenu {
+    width: 600px;
+    height: 200px;
+    margin-left: -80px;
+    font-family: "Story Script", sans-serif;
+}
+
+body {
+    background-color: #532912
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 30px auto;
+    float: right;
+    margin-top: 1px;
+}
+
+/*Size Styling*/
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+    color: #8d1919;
+}
+
+/*Meat Styling*/
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: -10px;
+    color: #8d1919;
+}
+
+/*Vegatables Styling*/
+.center {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-color: #8d1919;
+    padding-bottom: 15px;
+    margin-left: -10px;
+    color: #fae7ad;
+}
+/*The showtext for the order*/
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+    color: #dc143b;
+    padding-top: 1px;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+/*Order Buttonw styling*/
+#btnOrder {
+    margin: 10px 0px 10px 130px;
+    width: 100px;
+    height: 40px;
+    color: #c1431a;
+}
+
+/*Background*/
+/*The main background; light tan circle*/
+.circle-background {
+    height: 700px;
+    width: 700px;
+    clip-path: circle();
+    position: absolute;
+    background-color: #fae7ad;
+    padding-left: 885px;
+    margin-top: 10px;
+    z-index: -2; /*Sends the circle to the background: Underneath the text*/
+}
+
+.pizza-slice {
+    height: 370px;
+    width: 370px;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background-color: #fae7ad;
+    position: absolute;
+    z-index: -1;
+    margin-left: 730px;
+    margin-top: 10px;
+    border-radius: 0 0 145px 155px;
+    rotate: -154deg;
+}
+
+.pizza-slice2 {
+    height: 430px;
+    width: 430px;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background-color: #532912;
+    position: absolute;
+    z-index: -1;
+    border-radius: 80px 80px 200px 200px;
+    rotate: -154deg;
+    margin-left: 690px;
+    margin-top: -10px;
+}
+
+.circle-background1 {
+    height: 100px;
+    width: 100px;
+    clip-path: circle();
+    background-color: #c1431a;
+    z-index: 4;
+    position: absolute;
+    margin-top: 65px;
+    padding-right: 800px;
+
+}
+
+.circle-background2 {
+    height: 200px;
+    width: 200px;
+    clip-path: circle();
+    background-color: #8d1919;
+    position: absolute;
+    z-index: -1;
+    margin-top: 70px;
+    padding-right: 900px;
+
+}
+
+.circle-background3 {
+    height: 180px;
+    width: 180px;
+    clip-path: circle();
+    background-color: #c1431a;
+    position: absolute;
+    z-index: -1;
+    margin-top: 500px;
+    margin-left: 1020px;
+
+}
+
+
+.circle-background4 {
+    height: 100px;
+    width: 100px;
+    clip-path: circle();
+    background-color: #8d1919;
+    z-index: -1;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 1100px;
+
+}
+
+
+/*H1, H3 and Input Styling*/
+
+h1 {
+    font-family: "Limelight", sans-serif;
+    color: #dc143b;
+    font-size: 35px;
+    text-align: center;
+    padding-right: 100px;
+    background-color: #fae7ad;
+    border-radius: 100px;
+}
+
+h3 {
+    font-family: "Sonsie One", system-ui;
+    color: #8d1919;
+    text-align: center;
+}
+
+.Light_h3 {
+    font-family: "Sonsie One", system-ui;
+    color: #fae7ad;
+    text-align: center;
+}
+
+input {
+    font-family: "Sonsie One", system-ui;
+    font-size: 10px;
+}
