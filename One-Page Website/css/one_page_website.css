@@ -1,0 +1,523 @@
+/*These fonts comes from fonts.google.com*/
+/* font-family: "Rubik Wet Paint", system-ui; is for H1*/
+/*font-family: "Amatic SC", sans-serif; is for p*/
+/*font-family: "New Rocker", system-ui; is for the h2*/
+/* font-family: "Metal Mania", system-ui; for video section */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Metal+Mania&family=New+Rocker&family=Rubik+Wet+Paint&display=swap');
+
+/*Another note fun fact if i put them all in the cart they will be added to the embed code link*/
+
+html {
+    overflow-x: hidden;
+    /*prevents the brower froms displaying left to right scroll*/
+    scroll-behavior: smooth
+        /*smooth scrolling effect when one of the links is click*/
+    ;
+}
+
+/*NAVBAR*/
+.nav-bar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 700px;
+    width: 170px;
+    padding-top: 20px;
+    padding: 10px 16px;
+    background-color: rgb(68, 24, 24);
+    background-image: linear-gradient(to bottom, rgb(68, 24, 24), rgb(18, 17, 17));
+    z-index: 4;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 16px;
+    width: 150px;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    font-family: "New Rocker", system-ui;
+    font-size: 20px;
+    color: rgb(183, 172, 172);
+    text-align: center;
+    text-decoration: none;
+    padding: 16px;
+    padding-bottom: 30px;
+}
+
+/*The hover effects for the navbar*/
+.hover-underline {
+    position: relative;
+    display: inline-block;
+    margin-bottom: -10px
+}
+
+/* The underline bars for hover*/
+.hover-underline::after,
+.hover-underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #491515, #9c434d);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+}
+
+/* Top bar for hover*/
+.hover-underline::before {
+    top: -5px;
+    bottom: auto;
+    transform-origin: left;
+}
+
+/* On hover, expand the lines */
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+    transform: scaleX(1);
+}
+
+/**/
+
+/*Blockquote*/
+
+blockquote {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(183, 172, 172);
+    width: 90%;
+    margin: 30px;
+}
+
+/*Slide in the blockqoute from the left to the right*/
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 2s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/**/
+
+/*HEADING, P, AND BACKGROUND*/
+
+h1 {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-size: 40px;
+    background-image: linear-gradient(#ff0000, #9c434d);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+/*Fade the H1 text*/
+.fade-in-text {
+    animation: fadeIn 3s ease-in-out;
+    /* 'fadeIn' is the animation name, '3s' is the duration, 'ease-in-out' is the timing function */
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*H2, and H3 Styling*/
+h2,
+h3 {
+    font-family: "New Rocker", system-ui;
+    color: rgb(183, 172, 172);
+    font-size: 28px;
+    text-align: center;
+}
+
+#Titles-h3 {
+    font-family: "Rubik Wet Paint", system-ui;
+    background-image: linear-gradient(#ff0000, #9c434d);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/*paragraphs*/
+p {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(183, 172, 172);
+    text-align: left;
+}
+
+.p2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(183, 172, 172);
+    text-align: justify;
+    padding-left: 30px;
+}
+
+
+
+/*Background*/
+body {
+    background-color: rgb(18, 17, 17);
+    width: fit-content;
+    padding-right: 250px;
+    padding-left: 50px;
+    display: grid;
+}
+
+
+.row-background {
+    background: linear-gradient(to bottom, rgb(18, 17, 17), rgb(68, 24, 24));
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/*Creates Spikes between the section*/
+.spikes {
+    position: relative;
+    background: rgb(68, 24, 24);
+}
+
+.spikes::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -75px;
+    /* pulls spike below section */
+    height: 75px;
+    background-size: 75px 100%;
+    background-image:
+        linear-gradient(135deg, rgb(68, 24, 24) 25%, transparent 25%),
+        linear-gradient(225deg, rgb(68, 24, 24) 25%, transparent 25%);
+}
+
+
+.spikes {
+    margin-bottom: 55px;
+}
+
+
+.spikes2 {
+    position: relative;
+    background: rgb(68, 24, 24);
+}
+
+.spikes2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -75px;
+    height: 75px;
+
+    background-size: 75px 100%;
+    background-image:
+        linear-gradient(135deg, rgb(68, 24, 24) 25%, transparent 25%),
+        linear-gradient(225deg, rgb(68, 24, 24) 25%, transparent 25%);
+}
+
+.spikes2 {
+    margin-bottom: 55px;
+    padding-bottom: 100px;
+}
+
+/*VIDEO*/
+iframe {
+    display: table;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+}
+
+
+#video {
+    padding-top: 5px;
+    padding-bottom: 50px;
+    height: 500px;
+    width: 800px;
+}
+
+
+
+/*IMAGES*/
+
+img {
+    width: 600px;
+    height: 338px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    box-shadow: 0 4px, 8px 0 rgba(0, 0, 0, 0.4),
+        0 6px 20px 0 rgba(0, 0, 0, 19);
+
+}
+
+/*Hover effects: Duel images*/
+.gallery {
+    --g: 5px;
+    /*This should be the gap between the images*/
+    display: grid;
+    clip-path: inset(1px);
+}
+
+.gallery>img {
+    --_p: calc(-1*var(--g));
+    grid-area: 1/1;
+    width: 600px;
+    height: 420px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: .4s .1s;
+}
+
+.gallery>img:first-child {
+    clip-path: polygon(0 0, calc(100% + var(--_p)) 0, 0 calc(100% + var(--_p)))
+}
+
+.gallery>img:last-child {
+    clip-path: polygon(100% 100%, 100% calc(0% - var(--_p)), calc(0% - var(--_p)) 100%)
+}
+
+.gallery:hover>img:last-child,
+.gallery:hover>img:first-child:hover {
+    --_p: calc(50% - var(--g));
+}
+
+.gallery:hover>img:first-child,
+.gallery:hover>img:first-child:hover+img {
+    --_p: calc(-50% - var(--g));
+}
+
+/*Lightbox Modal*/
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    margin-top: -20px;
+    margin-left: 15px;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(18, 17, 17);
+}
+
+.modal-content {
+    width: min(50vw, 1200px);
+    aspect-ratio: 16 / 9;
+    position: relative;
+    background-color: none;
+    margin: auto;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.modal img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none;
+    max-height: none;
+}
+
+/*CLOSE BUTTON*/
+.close {
+    color: #960f0f;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*SLIDES*/
+/*This will hides the slides*/
+.mySlides {
+    display: none;
+}
+
+/*Next and Prev buttons*/
+.Prev,
+.Next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: 120px;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.Next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*Hover effect to add a background color with transparent*/
+.Prev:hover,
+.Next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*NUMBERTEXT*/
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: rgb(18, 17, 17);
+    padding: 2px 16px;
+    color: white;
+}
+
+.thumbnail {
+    opacity: 0.4;
+    width: 10px;
+    height: 10px;
+}
+
+.active,
+.thumbnail:hover {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*FORM*/
+form input {
+    font-family: "Amatic SC", sans-serif;
+    background-color: rgb(204, 193, 193);
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+    transition: 0.3 ease-out;
+}
+
+form input:focus {
+    border: 2px solid #960f0f;
+    color: black;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+label {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+textarea {
+    width: 50%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both;
+    border: 3px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    transition: 0.3s ease-out;
+    background-color: rgb(204, 193, 193);
+}
+
+textarea:focus {
+    color: black;
+    border: 3px solid #960f0f;
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #960f0f;
+    border: none;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 20px;
+    margin-top: 15px;
+    color: black;
+    cursor: pointer;
+    float: left;
+}
+
+input[type="submit"]:hover {
+    background-color: #9c434d;
+}
+
+
+
+/*FOOTER*/
+footer {
+    color: rgb(165, 165, 165);
+    margin-top: 70px;
+    /*negative margins stretch the footer background beyond the web browser screen edge on the left and right*/
+    margin-left: 25%;
+    bottom: 0;
+}

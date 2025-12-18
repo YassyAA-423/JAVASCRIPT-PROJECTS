@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Horror</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The website goes over horror defination as well as the Different forms of horror takes in media">
+    <meta name="keywords"
+        content="Horror, Board Game, Black Mold, Video Game, Who's Lila, Radio Silence, short horror film, Safe Haven, video, Contact">
+    <meta name="author" content="Yasmin A">
+    <link rel="stylesheet" href="css/one_page_website.css">
+    <script src="JS/one_page_website.js"></script>
+</head>
+
+<body>
+
+    <!--NAV Table--> <!--Navbar Should NOT be in headers or else navbar on the webpage get stuck in header section!-->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#" class="hover-underline" aria-label="Go to Top of the Webpage">Home</a></li>
+            <br>
+            <li><a href="#blackmold" class="hover-underline" aria-label="Go to the scary Boardgame">Black Mold</a></li>
+            <br>
+            <li><a href="#Who" class="hover-underline" aria-label="Go to Videogame">Who's Lila</a></li>
+            <br>
+            <li><a href="#radio" class="hover-underline" aria-label="Go to Scary Story">Radio Silence</a></li>
+            <br>
+            <li><a href="#haven" class="hover-underline" aria-label="Go to Scary Movie">Save Haven</a></li>
+            <br>
+            <li><a href="#contact" class="hover-underline" aria-label="Contact Us">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Home/top-->
+    <header>
+        <h1 class="fade-in-text">Horror</h1>
+        <blockquote class="slide-in"
+            cite="https://today.usc.edu/why-do-we-like-to-be-scared-usc-experts-explain-the-science-of-fright/">
+            “We like novelty, something that departs from our everyday experience,” he said. “Some of the
+            attraction
+            of being scared comes from the deviation of having a new experience that we know is safe.” by Irving
+            Biederman
+        </blockquote>
+        <p class="p2">What is horror?... And why does a good chunk of humanity enjoy it? That has
+            been asked and generally studied throughout the years….<br><br>
+            ... But we are actually not going to answer that here… Instead, we are here
+            to show a little love to some
+            not-so-well-known works of horror.</p>
+        </div>
+    </header>
+
+    <!--Images-->
+    <section class="spikes">
+        <div class="row-background">
+            <h2>Different Forms of Horror</h2>
+            <p>Horror can come in many forms. Honestly, it's amazing just how creative
+                people can be when it comes to this. But my goal for this is to show examples of media that you may not
+                have heard much about
+                (and if you do, that's great!). I'll still mention a few big names here and there, but I won't be using
+                them
+                as the actual example. </p>
+        </div>
+
+    </section>
+
+
+    <!--Boardgame-->
+    <section class="spikes">
+        <div class="row-background">
+            <div id="blackmold">
+                <h2>Board Games</h2>
+                <p>You probably weren't expecting to see board games involved in
+                    this genre, but there are
+                    surprisingly quite a few. And no, I am not talking about the dreaded "Perfection Game" by
+                    Hasbro. That ticking still spikes up my anxiety… In this case, I'm talking about horror
+                    board
+                    games that use tension in a more creative way.</p>
+                <h3 id="Titles-h3">Black Mold</h3>
+                <div class="gallery">
+                    <img src="images/Blackmold.webp" onclick="openModal();currentSlide(1)"
+                        alt="Picture of the board game Black Mold">
+                    <img src="images/black-mold-box-cover.webp" onclick="openModal();currentSlide(2)"
+                        alt="Cover art for the Black Mold Board Game">
+                </div>
+                <p>Black mold was created by Terrible Games. Between 2 - 5 people
+                    can play. In this board game, you
+                    play as prisoners who have been abandoned during a fungal infection. Your goal is to escape
+                    this
+                    underground prison, but during your turn, you have to hold your breath (or use the 60-second
+                    sand timer) to stumble your way through this labyrinth. But be careful… the longer you stay,
+                    the
+                    higher the chance you get infected… becoming one of the monsters lurking in this
+                    prison.<small>(Also highly recommend "The Night cage")</small></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Video Games-->
+    <section class="spikes">
+        <div class="row-background">
+            <div id="Who">
+                <h2>Video Games</h2>
+                <p>An obvious form of horror is video games, it can be subtle
+                    psychological horror games like "Night
+                    in the Woods" to Survival Horror games like "Resident Evil". These are wonderful examples of
+                    horror because you have to be involved! Your decisions influence whether you will get a good or
+                    bad ending. </p>
+                <h3 id="Titles-h3">Who's Lila</h3>
+                <div class="gallery">
+                    <img src="images/Who's_Lila_Cover.jpg" onclick="openModal();currentSlide(3)"
+                        alt="Cover art for the game Who's Lila">
+                    <img src="images/Interrogation.gif" onclick="openModal();currentSlide(4)"
+                        alt="William in a Interrogation room">
+                </div>
+                <p>Who's Lila is a point-and-click reverse detective game, where you
+                    can control the character's
+                    expression. In this game, you mostly play a character called William. Something strange is
+                    happening around you, and you are a suspect in Tanya's Disappearance. Throughout the gameplay,
+                    your choices are based on the character's expression. You can't help but feel unsettled as you
+                    play through.. Finding clues to what happened… who and how Lila is connected in all this.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--The Lightbox-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/Wide-Blackmold.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/Wide-black-mold-box-cover.png" style="width: 100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/Wide-Who's_Lila_Cover.png" style="width: 100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/Wide-Interrogation.gif" style="width: 100%;">
+            </div>
+            <!--Next/Previous Buttons-->
+            <a class="Prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--The Caption Text-->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!--Thumbnails-->
+            <div class="column">
+                <img class="thumbnail cursor active" src="images/Thumbnail-Blackmold.png" onclick="currentSlide(1)" alt="Picture of the board game Black Mold">
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="images/Thumbnail-black-mold-box-cover.png" onclick="currentSlide(2)" alt="Cover art for the Black Mold Board Game">
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="images/Thumbnail-Who's_Lila_Cover.png" onclick="currentSlide(3)" alt="Cover art for the game Who's Lila">
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="images/Thumbnail-Interrogation.png" onclick="currentSlide(4)" alt="William in a Interrogation room">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Videos-->
+
+    <!--Storytime video-->
+    <section class="spikes">
+        <div class="row-background">
+            <div id="radio">
+                <h2>Story-Telling</h2>
+                <p>The most well-known form of horror is, of course, storytelling—originally passed down by word of
+                    mouth.
+                    This form has evolved and been better preserved through writing and recording. Books like "Scary
+                    Stories
+                    to Tell in the Dark" by Alvin Schwartz, websites such as "Creepypasta.com", and podcasts like
+                    "Wake
+                    of
+                    Corrosion" all continue this long tradition of sharing frightening tales.</p>
+                <h3 id="Titles-h3">Radio Silence</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FENyF6weMnE"></iframe>
+                <p>"Radio Silence" by Bencbarlett, read by MrCreepyPasta, is a short 5-minute
+                    story. Though it is short, it
+                    gives a what-if answer to the question "What if we're not alone?". By the time it's done, you're
+                    left
+                    feeling unsettled...</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Short film video-->
+    <section class="spikes">
+        <div class="row-background">
+            <div id="haven">
+                <h2>Scary movies</h2>
+                <p>If anything, Horror films in general a very popular way to consume this
+                    genre. From the grief-horror like
+                    "The Babadook" directed by Jennifer Kent to Classics like "Psycho" directed by Alfred Hitchcock. For
+                    this one, we'll focus on Short films. There are tons of wonderful horror short films that explore
+                    and
+                    take more risks than big-screen films.</p>
+                <h3 id="Titles-h3">Safe Haven</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FsHSmsUZtQg"></iframe>
+                <p>Now I do have a few favorite short horror films. I narrowed it down to this
+                    one for one reason... The
+                    ending. Not to spoil too much, but “Safe Haven” by Martin Stalker is about a family who is
+                    trying to
+                    survive a post-apocalyptic climate disaster. It's roughly 16 minutes, but if you want a
+                    "sit-at-the-edge-of-your-seat" short film, I highly recommend this one. <small>(I also highly
+                        recommend
+                        "All You Can Carry" by Andrew Rose)</small>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Closing section-->
+    <section class="spikes2">
+        <div class="row-background">
+            <p>Basically, what I am saying is that humans are incredibly creative. While I have
+                talked about a few different
+                forms of horror, there are still many I haven't gone through… So by all means, explore and be curious.
+                And
+                remember that Horror doesn't mean you have to go through it alone. It's always much more fun… <small>
+                    and
+                    comforting...</small> to have friends or loved ones to experience them with you.
+            </p>
+            <!--Form-->
+            <div id="contact">
+                <h3>If you have any questions or comments, please use the form below
+                </h3>
+                <div>
+                    <form>
+                        <input type="text" aria-label="Type First Name Here" placeholder="First Name">
+                        <input type="text" aria-label="Type Last Name Here" placeholder="Last Name"><br>
+                        <input type="email" aria-label="Type Email Here" placeholder="Email">
+                        <input type="tel" aria-label="Type Phone Number Here" placeholder="Phone Number"><br>
+                        <textarea aria-label="Type Message Here" placeholder="Type Message Here..."></textarea><br>
+                        <input type="submit" aria-label="Submit Form" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>Thank you for visiting, I genuinely hope you found something new to explore!</p>
+    </footer>
+</body>
+
+</html>
