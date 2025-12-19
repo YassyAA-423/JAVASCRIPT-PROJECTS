@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Basic AJAX Demo</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<div class='container' id="content">
+		<h1>Sign up for our Newsletter</h1>
+		<div class="display">
+			<form>
+				<input id="fullName" placeholder="Name">
+				<input placeholder="Email">
+				<!--The for the XML HTTP Request-->
+				<input onclick="getMsg();" type="button" class="btn" value="Submit"/>
+			</form>
+		</div>
+		<div id="demo">
+			<!--This will GET the content.html-->
+			<h1>Testing</h1>
+			<button type="button" onclick="replace()">This Will Change</button>
+		</div>
+	</div>
+	<script src="ajaxScript.js"></script>
+</body>
+</html>
