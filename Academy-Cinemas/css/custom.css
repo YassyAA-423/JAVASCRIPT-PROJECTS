@@ -40,6 +40,7 @@ body {
     height: 100px;
 }
 
+
 /*affects the title in the navbar Academy Cinemas*/
 .navbar-brand {
     color: var(--main-color-accent);
@@ -72,6 +73,16 @@ body {
     padding-left: 1.5rem;
 }
 
+/*Shrink on scroll navbar*/
+.nav-shrink{
+    height: 80px;
+    transition: .5s ease;
+}
+
+/*Adds a transition to the movie drop down menu on shrink and scroll*/
+.navbar-collapse{
+    transition: margin-top 0.5s ease;
+}
 /*movie drop down menu*/
 
 /*targets the drop down menu that contains the links for each movie title*/
@@ -362,3 +373,4 @@ footer {
     text-align: center;
     z-index: 4;
 }
+
