@@ -4,9 +4,11 @@ This repository is for My Tech Academy JavaScript's Projects. A few of these are
 
 ## Projects
 
+### AJAX 
+
 * [AJAX Project](https://github.com/YassyAA-423/JAVASCRIPT-PROJECTS/tree/main/AJAX)
 
-###This Ajax Project was about learning how to send a request and recieve a repsonse using AJAX
+This Ajax Project was about learning how to send a request and recieve a repsonse using AJAX
 
 ### ACADEMY CINEMAS
 * [Updated Academy Cinemas](https://github.com/YassyAA-423/JAVASCRIPT-PROJECTS/tree/main/Academy-Cinemas) 
@@ -19,19 +21,19 @@ Updated sample page about Movie theater using Bootstrap and JavaScript. This was
 
 A basic Calculator. A User can add, subtract, divide, and multiply one a simply webpage. This uses CSS and JS.
 
-### BASIC JAVASCRIPT PROJECTS
+### BASIC JAVASCRIPT 
 
 * [Basic JavaScript Projects](https://github.com/YassyAA-423/JAVASCRIPT-PROJECTS/tree/main/Basic%20JavaScript%20Projects)
 
 This a series of basic Javascripts that include expressions alerts, function, Dictionaries, loop, etc.
 
-###
+### One-Page Website
 
 * [Updated One-page Website Project](https://github.com/YassyAA-423/JAVASCRIPT-PROJECTS/tree/main/One-Page%20Website)
 
 Updated webpage about horror, not about the history but about the different forms of horror. It was another testing page to style with CSS and A simple Javascript lightbox for the images.
 
-### PIZZA PROJECT
+### PIZZA 
 
 * [Pizza Project](https://github.com/YassyAA-423/JAVASCRIPT-PROJECTS/tree/main/Pizza_Project)
 
@@ -49,7 +51,7 @@ Updated sample page about Simple recipes using CSS and JS. This was made follow 
 
 A Classic game of Tic-Tac-Toe, that was made using javascript and css. The user plays against a random input.
 
-### JQUERY PROJECT
+### JQUERY
 
 * [jQuery Project](https://github.com/YassyAA-423/JAVASCRIPT-PROJECTS/tree/main/jQuery%20Project)
 
